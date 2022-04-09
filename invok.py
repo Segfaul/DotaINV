@@ -1,29 +1,51 @@
 import pyautogui as pg
 import keyboard
 from time import *
+
+
 def Ghost_Walk():
-    #keyboard.send('q');sleep(0.001); keyboard.send('q+w'); keyboard.send('r')
+    # keyboard.send('q');sleep(0.001); keyboard.send('q+w'); keyboard.send('r')
     keyboard.send('q');sleep(0.1); keyboard.send('q'); sleep(0.1); keyboard.send('w'); sleep(0.1); keyboard.send('r'); sleep(0.1)
+
+   
 def Blast():
-    #keyboard.send('q+w+e'); keyboard.send('r')
+    # keyboard.send('q+w+e'); keyboard.send('r')
     keyboard.send('q');sleep(0.1); keyboard.send('w'); sleep(0.1); keyboard.send('e'); sleep(0.1); keyboard.send('r'); sleep(0.1)
+    
+    
 def Tornado():
-    #keyboard.send('w');sleep(0.001); keyboard.send('w+q'); keyboard.send('r')
+    # keyboard.send('w');sleep(0.001); keyboard.send('w+q'); keyboard.send('r')
     keyboard.send('w');sleep(0.1); keyboard.send('w'); sleep(0.1); keyboard.send('q'); sleep(0.1); keyboard.send('r'); sleep(0.1)
+    
+    
 def Meteor():
-    #keyboard.send('e');sleep(0.001); keyboard.send('e+w'); keyboard.send('r')
+    # keyboard.send('e');sleep(0.001); keyboard.send('e+w'); keyboard.send('r')
     keyboard.send('e');sleep(0.1); keyboard.send('e'); sleep(0.1); keyboard.send('w'); sleep(0.1); keyboard.send('r'); sleep(0.1)
+    
+    
 def Sunstrike():
     keyboard.send('e');sleep(0.1); keyboard.send('e'); sleep(0.1); keyboard.send('e'); sleep(0.1); keyboard.send('r'); sleep(0.1)
+    
+    
 def EMP():
     keyboard.send('w');sleep(0.1); keyboard.send('w'); sleep(0.1); keyboard.send('w'); sleep(0.1); keyboard.send('r'); sleep(0.1)
+    
+    
 def ColdSnap():
     keyboard.send('q');sleep(0.1); keyboard.send('q'); sleep(0.1); keyboard.send('q'); sleep(0.1); keyboard.send('r'); sleep(0.1)
+    
+    
 def IceW():
     keyboard.send('q');sleep(0.1); keyboard.send('q'); sleep(0.1); keyboard.send('e'); sleep(0.1); keyboard.send('r'); sleep(0.1)
+    
+    
 def Forge():
     keyboard.send('e');sleep(0.1); keyboard.send('e'); sleep(0.1); keyboard.send('q'); sleep(0.1); keyboard.send('r'); sleep(0.1)
+    
+    
 sleep(2)
+
+
 def Script_Inject():
     pg.alert('Добро пожаловать в Scriptorio 3.0\nЖелаем приятного использования :)')
     while True:
@@ -77,4 +99,6 @@ def Script_Inject():
                         print(repr(e)); break
                 if keyboard.is_pressed('m'): pg.alert('скрипт деактивирован'); break
         if keyboard.is_pressed('='): pg.alert('Программа оффнута'); break
+            
+            
 Script_Inject()
